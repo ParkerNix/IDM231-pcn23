@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsForDinner</title>
+</head>
+<body>
+  <h1>What Should You REALLY Eat For Dinner?</h1>
+  <p>Enter Birthday Here:</p>
+  <p>You Got:</p>
+  <h2>FAST Food</h2>
+  <h2>Your Own Cooking</h2>
+  <h2>Two Very Different Meals</h2>
+  <h2>NOT The Resturant From That One Time</h2>
+  <h2>A Feast Fit For The Queen You Are</h2>
+  <h2>Perfection on a Plate</h2>
+  <h2>Literally Nothing</h2>
+  <h2>The Usual Place That You Love</h2>
+  <h2>Something Weird and Not Appealing</h2>
+  <h2>Something You Secretly Love</h2>
+  <h2>A Thing Only You COuld Think Of</h2>
+  <h2>Whatever Everyone Else Wants</h2>
+</body>
+</html>
