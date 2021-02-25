@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'open_sans';
+   src: url('fonts/opensans-regular-webfont.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+  }
+   
+  @font-face {
+   font-family: 'open_sans';
+   src: url('fonts/opensans-bold-webfont.woff2') format('woff2');
+   font-weight: bold;
+   font-style: normal;
+  }
+  
+  @font-face {
+   font-family: 'poppins';
+   src: url('fonts/poppins-regular-webfont.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+  }
+  
+  @font-face {
+   font-family: 'poppins';
+   src: url('fonts/poppins-bold-webfont.woff2') format('woff2');
+   font-weight: bold;
+   font-style: normal;
+  }
+
+  h1, h2 {
+      font-family: 'poppins', arial, sans-serif;
+  }
+
+  p {
+      font-family: 'open_sans', arial, sans-serif;
+  }
+
+  .line1, .line2 {
+      display: flex;
+      flex-direction: column;
+  }
