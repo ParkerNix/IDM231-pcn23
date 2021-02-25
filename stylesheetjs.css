@@ -26,15 +26,52 @@
    font-style: normal;
   }
 
+  html {
+      background-color: lightsteelblue;
+  }
   h1, h2 {
       font-family: 'poppins', arial, sans-serif;
+      text-align: center;
   }
 
   p {
       font-family: 'open_sans', arial, sans-serif;
+      text-align: center;
   }
 
-  .line1, .line2 {
-      display: flex;
-      flex-direction: column;
+  img {
+      width: 100%;
+  }
+
+  button {
+      cursor: pointer;
+  }
+
+  form {
+      position: relative;
+      left: 26rem;
+  }
+
+  header {
+      grid-area: controls;
+  }
+
+  .line1 {
+      grid-area: line1;
+  }
+
+  .line2 {
+      grid-area: line2;
+  }
+
+  main {
+      display: grid;
+      grid-template-columns: repeat(3 1fr);
+      grid-template-rows: repeat(1 100%);
+      grid-template-areas: 
+      "line1"
+      "controls"
+      "line2";
+      justify-items: center;
+      padding: 9rem 0 0;
   }
