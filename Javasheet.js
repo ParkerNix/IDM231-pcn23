@@ -15,6 +15,10 @@ function logButton(button) {
     console.log(`user pressed ` + button);
 } 
 
+function logSign(sign) {
+    console.log(`user is ` + sign);
+}
+
 hu.addEventListener('click', function () {logButton('hu')}, false);
 tbo.addEventListener('click', function () {logButton('tbo')}, false);
 yk.addEventListener('click', function () {logButton('yk')}, false);
