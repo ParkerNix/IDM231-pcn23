@@ -10,29 +10,46 @@
 <body>
 
   <main>
-      <div class="line1">
-      <button id="hu"><img src="images/hurryup.svg" alt="hurryup"></button>
-      <button id="tbo"><img src="images/twoisbetterthanone.svg" alt="two is better than one"></button>
-      <button id="yk"><img src="images/yasskween.svg" alt="yass kween"></button>
-      <button id="ygn"><img src="images/yougetnothing.svg" alt="you get nothing"></button>
-      <button id="id"><img src="images/iamdisgusted.svg" alt="i am disgusted"></button>
-      <button id="wtf"><img src="images/wtf.svg" alt="wtf"></button>
+    <div class="line1">
+      <button id="hu"><img src="images/hurryup.png" alt="hurryup"></button>
+      <button id="tbo"><img src="images/twoisbetterthanone.png" alt="two is better than one"></button>
+      <button id="yk"><img src="images/yasskween.png" alt="yass kween"></button>
+      <button id="ygn"><img src="images/yougetnothing.png" alt="you get nothing"></button>
+      <button id="id"><img src="images/iamdisgusted.png" alt="i am disgusted"></button>
+      <button id="wtf"><img src="images/wtf.png" alt="wtf"></button>
+    </div>
+    <header>
+      <h1>What Advice Would Help YOU Pick What You Want For Dinner?</h1>
+        <p>Enter Birthday Here:</p>
+          <p><input id="fname" type="text" placeholder="First name here"></p>
+          <p><input id="birthday" type="date"></p>
+          <p><button id="submit">Submit</button></p>
+    </header>
+    <div class="line2">
+      <button id="cb"><img src="images/chef_boi_ardee.png" alt="chef boyardee"></button>
+      <button id="sm"><img src="images/shtillmad.png" alt="still mad"></button>
+      <button id="pft"><img src="images/perfecto.png" alt="perfecto"></button>
+      <button id="mgt"><img src="images/me_gustas_tu.png" alt="love"></button>
+      <button id="shh"><img src="images/shh.png" alt="shh"></button>
+      <button id="eh"><img src="images/eh.png" alt="eh"></button>
+    </div>
+    <div id="modal" class="modal" hidden>
+      <div class="modal-body">
+        <div class="modal-content">
+          <div>
+            <img id="zDisplayImg" src="images/hurryup.png" alt="">
+          </div>
+          <p><span id="zTitle">Title</span></p>
+          <p><span id="zDateRange">Date Range</span></p>
+          <div id="zMoreInfo">
+            <p>Object description goes here</p>
+          </div>
+          <button id="btn-modal-close" class="toggle-modal">Close</button>
         </div>
-        <header>
-            <h1>What Advice Would Help YOU Pick What You Want For Dinner?</h1>
-          <p>Enter Birthday Here:</p>
-            <p><input id="fname" type="text" placeholder="First name here"></p>
-            <p><input id="birthday" type="date"></p>
-            <p><button id="submit">Submit</button></p>
-          </header>
-        <div class="line2">
-            <button id="cb"><img src="images/chef_boi_ardee.svg" alt="chef boyardee"></button>
-            <button id="sm"><img src="images/shtillmad.svg" alt="still mad"></button>
-            <button id="pft"><img src="images/perfecto.svg" alt="perfecto"></button>
-            <button id="mgt"><img src="images/me_gustas_tu.svg" alt="love"></button>
-            <button id="shh"><img src="images/shh.svg" alt="shh"></button>
-            <button id="eh"><img src="images/eh.svg" alt="eh"></button>
-        </div>
-        <script src="Javasheet.js"></script>
+      </div>
+      <div class="blanket"></div>
+    </div>
+  <script src="Javasheet.js"></script>
+  </main>
 </body>
 </html>
