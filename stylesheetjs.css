@@ -73,11 +73,10 @@
       "controls"
       "line2";
       justify-items: center;
-      width: 1280px;
-      height: 960px;
-      position: fixed;
-      top: 4.5rem;
-      left: 0;
+      margin: auto;
+      width: 90%;
+      row-gap: 5rem;
+      padding-top: 1rem;
  }
 
  [hidden] {
@@ -144,5 +143,5 @@
 }
 
 #imgModal {
-    width: 15vw;
+    width: 7vw;
 }
