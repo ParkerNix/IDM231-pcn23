@@ -42,7 +42,7 @@ function hitButton(button) {
             dateRange.innerHTML = "May 21 to June 20";
             description.innerHTML = "Well, there was that one place, and the other place, and you couldn't quite pick, so... more for you!";
             stopAllAudio();
-            ygnaudio.play();
+            tboaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'yk' :

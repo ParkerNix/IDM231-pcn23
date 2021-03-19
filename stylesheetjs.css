@@ -1,3 +1,5 @@
+/*font setup*/
+
 @font-face {
     font-family: 'open_sans';
    src: url('fonts/opensans-regular-webfont.woff2') format('woff2');
@@ -26,6 +28,8 @@
    font-style: normal;
   }
 
+  /*general setup*/
+
 .wrapper {
     background-image: url("images/Transforming_Furikake_Gohan.png");
     background-color: white;
@@ -47,17 +51,132 @@
       width: 100%;
   }
 
-  button:hover {
-      background-color: lightgray;
+  /*button setup*/
+  #hu {
+    background-image: url('images/hurryup.png');
+    background-size: 147px;
   }
 
-  button {
-      cursor: pointer;
-      background-color: white;
+  #tbo {
+    background-image: url('images/twoisbetterthanone.png');
+    background-size: 147px;
   }
 
-  header {
-      grid-area: controls;
+  #yk { 
+    background-image: url('images/yasskween.png');
+    background-size: 147px;
+  }
+
+  #ygn {
+    background-image: url('images/yougetnothing.png');
+    background-size: 147px;
+  }
+
+  #id { 
+    background-image: url('images/iamdisgusted.png');
+    background-size: 147px;
+  }
+
+  #wtf { 
+    background-image: url('images/wtf.png');
+    background-size: 147px;
+  }
+
+  #cb { 
+    background-image: url('images/chef_boi_ardee.png');
+    background-size: 147px;
+  }
+
+  #sm { 
+    background-image: url('images/shtillmad.png');
+    background-size: 147px;
+  }
+
+  #pft { 
+    background-image: url('images/perfecto.png');
+    background-size: 147px;
+  }
+
+  #mgt { 
+    background-image: url('images/me_gustas_tu.png');
+    background-size: 147px;
+  }
+
+  #shh { 
+    background-image: url('images/shh.png');
+    background-size: 147px;
+  }
+
+  #eh { 
+    background-image: url('images/eh.png');
+    background-size: 147px;
+  }
+
+  /*----------*/
+
+  #hu:hover {
+    background-image: url('images/hurryup2.png');
+    background-size: 147px;
+  }
+
+  #tbo:hover {
+    background-image: url('images/twoisbetterthanone2.png');
+    background-size: 147px;
+  }
+
+  #yk:hover { 
+    background-image: url('images/yasskween2.png');
+    background-size: 147px;
+  }
+
+  #ygn:hover {
+    background-image: url('images/yougetnothing2.png');
+    background-size: 147px;
+  }
+
+  #id:hover { 
+    background-image: url('images/iamdisgusted2.png');
+    background-size: 147px;
+  }
+
+  #wtf:hover { 
+    background-image: url('images/wtf2.png');
+    background-size: 147px;
+  }
+
+  #cb:hover { 
+    background-image: url('images/chef_boi_ardee2.png');
+    background-size: 147px;
+  }
+
+  #sm:hover { 
+    background-image: url('images/shtillmad2.png');
+    background-size: 147px;
+  }
+
+  #pft:hover { 
+    background-image: url('images/perfecto2.png');
+    background-size: 147px;
+  }
+
+  #mgt:hover { 
+    background-image: url('images/me_gustas_tu2.png');
+    background-size: 147px;
+  }
+
+  #shh:hover { 
+    background-image: url('images/shh2.png');
+    background-size: 147px;
+  }
+
+  #eh:hover { 
+    background-image: url('images/eh2.png');
+    background-size: 147px;
+  }
+
+  #hu, #tbo, #yk, #ygn, #id, #wtf, #cb, #sm, #pft, #mgt, #shh, #eh {
+      width: 150px;
+      height: 150px;
   }
 
   .buttons {
@@ -70,9 +189,24 @@
       margin: 0 .5rem;
 }
 
-#closeModal, #closeHelpModal {
+  #closeModal, #closeHelpModal {
     margin: 1rem .5rem;
-}
+  }
+
+  button:hover {
+      background-color: lightgray;
+  }
+
+  button {
+      cursor: pointer;
+      background-color: white;
+  }
+
+  /*grid setup*/
+
+  header {
+      grid-area: controls;
+  }
 
   .line1 {
       grid-area: line1;
@@ -97,6 +231,8 @@
       padding: 1rem 0;
       background-color: rgba(255, 255, 255, 0.514);
  }
+
+ /*modal setup*/
 
  [hidden] {
 	display: none !important;
