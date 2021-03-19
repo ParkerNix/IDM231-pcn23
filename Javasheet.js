@@ -11,6 +11,19 @@ const mgt = document.getElementById('mgt');
 const shh = document.getElementById('shh');
 const eh = document.getElementById('eh');
 
+const huaudio = document.getElementById('huaudio');
+const ygnaudio = document.getElementById('ygnaudio');
+const smaudio = document.getElementById('smaudio');
+const pftaudio = document.getElementById('pftaudio');
+const ykaudio = document.getElementById('ykaudio');
+const shhaudio = document.getElementById('shhaudio');
+const tboaudio = document.getElementById('tboaudio');
+const idaudio = document.getElementById('idaudio');
+const wtfaudio = document.getElementById('wtfaudio');
+const ehaudio = document.getElementById('ehaudio');
+const mgtaudio = document.getElementById('mgtaudio');
+const cbaudio = document.getElementById('cbaudio');
+
 function hitButton(button) {
     console.log(`user pressed ` + button);
     switch (button) {
@@ -19,6 +32,8 @@ function hitButton(button) {
             title.innerHTML = "You Want FAST Food";
             dateRange.innerHTML = "March 21 to April 19";
             description.innerHTML = "Whatever it is, it better be here within the next five seconds. Waiting will not be on the menu tonight.";
+            stopAllAudio();
+            huaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'tbo' :
@@ -26,6 +41,8 @@ function hitButton(button) {
             title.innerHTML = "Get Two Very Different Meals";
             dateRange.innerHTML = "May 21 to June 20";
             description.innerHTML = "Well, there was that one place, and the other place, and you couldn't quite pick, so... more for you!";
+            stopAllAudio();
+            ygnaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'yk' :
@@ -33,6 +50,8 @@ function hitButton(button) {
             title.innerHTML = "Eat a Feast Fit For The Royal Figure You Are";
             dateRange.innerHTML = "July 23 to September 22";
             description.innerHTML = "Extra does not even begin to describe the lavish dinner you want. You have to treat yourself every now and again, right?";
+            stopAllAudio();
+            ykaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'ygn' :
@@ -40,6 +59,8 @@ function hitButton(button) {
             title.innerHTML = "Pick or You'll Get an Order of Literally Nothing";
             dateRange.innerHTML = "September 23 to October 22";
             description.innerHTML = "Just choose anything at this point, actually anything. You're going to starve before you ever even order.";
+            stopAllAudio();
+            ygnaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'id' :
@@ -47,6 +68,8 @@ function hitButton(button) {
             title.innerHTML = "Have Something Weird and Not Appealing";
             dateRange.innerHTML = "November 22 to December 21";
             description.innerHTML = "Where others would totally run and scream for someone to burn it, you proudly sit down, ready to dig in. Bravery at its finest.";
+            stopAllAudio();
+            idaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'wtf' :
@@ -54,6 +77,8 @@ function hitButton(button) {
             title.innerHTML = "Eat Some Weird Thing Only You'd Make";
             dateRange.innerHTML = "January 20 to February 18";
             description.innerHTML = "Step one: pull a bunch of random stuff from the pantry. Step two: put 'em together and see what happens.";
+            stopAllAudio();
+            wtfaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'cb' :
@@ -61,6 +86,8 @@ function hitButton(button) {
             title.innerHTML = "Make Somethng Yourself";
             dateRange.innerHTML = "April 20 to May 20";
             description.innerHTML = "Why leave to get something? You can make it right from home! So what if it's not fancy? You're crafty (and too lazy to go out)!";
+            stopAllAudio();
+            cbaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'sm' :
@@ -68,6 +95,8 @@ function hitButton(button) {
             title.innerHTML = "How About Something That's NOT That One Place";
             dateRange.innerHTML = "June 21 to July 22";
             description.innerHTML = "Alright, we know the rant is coming, just let it out. At least we know what to look for this time (and what to avoid...)";
+            stopAllAudio();
+            smaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'pft' :
@@ -75,6 +104,8 @@ function hitButton(button) {
             title.innerHTML = "Perfection on a Plate ONLY";
             dateRange.innerHTML = "August 23 to September 22";
             description.innerHTML = "Okay, if there is so much as a noodle, pepperoni, heck a carrot out of place, consider this meal cancelled.";
+            stopAllAudio();
+            pftaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'mgt' :
@@ -82,6 +113,8 @@ function hitButton(button) {
             title.innerHTML = "Go to the Usual Place That You Love";
             dateRange.innerHTML = "December 22 to January 19";
             description.innerHTML = "Gotta show some love to the classics, couldn't live without 'em. The thought of betraying them is unforgivable.";
+            stopAllAudio();
+            mgtaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'shh' :
@@ -89,6 +122,8 @@ function hitButton(button) {
             title.innerHTML = "Get Something You Secretly Love";
             dateRange.innerHTML = "October 23 to November 21";
             description.innerHTML = "For reasons undisclosed, you can never be seen eating it, but you could never just pass up an oppportunity to get some!";
+            stopAllAudio();
+            shhaudio.play();
             modal.hidden = !modal.hidden;
         break;
         case 'eh' :
@@ -96,10 +131,50 @@ function hitButton(button) {
             title.innerHTML = "Get Whatever Everyone Else Wants";
             dateRange.innerHTML = "February 19 to March 20";
             description.innerHTML = "You don't want to be pushy, so you go with the popular choice. Curry? Sounds good. Ramen? Sure! Crickets? Maybe not everything...";
+            stopAllAudio();
+            ehaudio.play();
             modal.hidden = !modal.hidden;
         break;
     }
 } 
+
+function stopAllAudio() {
+    huaudio.pause();
+    huaudio.currentTime = 0;
+
+    tboaudio.pause();
+    tboaudio.currentTime = 0;
+
+    ykaudio.pause();
+    ykaudio.currentTime = 0;
+
+    ygnaudio.pause();
+    ygnaudio.currentTime = 0;
+
+    idaudio.pause();
+    idaudio.currentTime = 0;
+
+    wtfaudio.pause();
+    wtfaudio.currentTime = 0;
+
+    cbaudio.pause();
+    cbaudio.currentTime = 0;
+
+    smaudio.pause();
+    smaudio.currentTime = 0;
+
+    pftaudio.pause();
+    pftaudio.currentTime = 0;
+
+    mgtaudio.pause();
+    mgtaudio.currentTime = 0;
+
+    shhaudio.pause();
+    shhaudio.currentTime = 0;
+    
+    ehaudio.pause();
+    ehaudio.currentTime = 0;
+}
 
 hu.addEventListener('click', function () {hitButton('hu');});
 tbo.addEventListener('click', function () {hitButton('tbo');});
@@ -190,6 +265,7 @@ const modal = document.getElementById('modal');
 const closeModal = document.getElementById('closeModal');
 closeModal.addEventListener('click', function() {
   console.log('Modal is closed for buisiness');
+  stopAllAudio();
   modal.hidden = !modal.hidden;
 });
 
@@ -207,6 +283,6 @@ help.addEventListener('click', function() {
 const helpModal = document.getElementById('helpModal');
 const closeHelpModal = document.getElementById('closeHelpModal');
 closeHelpModal.addEventListener('click', function() {
-  console.log('Help modal closed, sorry folks');
+  console.log('Help modal closed :(');
   helpModal.hidden = !helpModal.hidden;
 });

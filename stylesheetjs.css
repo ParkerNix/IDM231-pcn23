@@ -26,15 +26,19 @@
    font-style: normal;
   }
 
-  html {
-      background-color: lightsteelblue;
-  }
+.wrapper {
+    background-image: url("images/Transforming_Furikake_Gohan.png");
+    background-color: white;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
   h1, h2 {
       font-family: 'poppins', arial, sans-serif;
       text-align: center;
   }
 
-  p {
+  p, button, input {
       font-family: 'open_sans', arial, sans-serif;
       text-align: center;
   }
@@ -43,18 +47,32 @@
       width: 100%;
   }
 
-  button {
-      cursor: pointer;
+  button:hover {
+      background-color: lightgray;
   }
 
-  form {
-      position: relative;
-      left: 26rem;
+  button {
+      cursor: pointer;
+      background-color: white;
   }
 
   header {
       grid-area: controls;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons button, #closeModal, #closeHelpModal, input {
+      border-radius: 6px;
+      margin: 0 .5rem;
+}
+
+#closeModal, #closeHelpModal {
+    margin: 1rem .5rem;
+}
 
   .line1 {
       grid-area: line1;
@@ -76,7 +94,8 @@
       margin: auto;
       width: 90%;
       row-gap: 5rem;
-      padding-top: 1rem;
+      padding: 1rem 0;
+      background-color: rgba(255, 255, 255, 0.514);
  }
 
  [hidden] {
@@ -113,6 +132,7 @@
 
 .modal-body {
 	background-color: #fff;
+    border-radius: 6px;
 
 	height: 50vh;
 	max-width: 50vw;
@@ -133,13 +153,13 @@
 #title, #dateRange, #name {
     font-family: 'poppins', arial, sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #description, #helpdesc {
     font-family:  'open_sans', arial, sans-serif;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #imgModal {

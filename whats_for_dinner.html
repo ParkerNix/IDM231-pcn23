@@ -8,33 +8,48 @@
     <link rel="normalizer" href="normalizer.css">
 </head>
 <body>
+  <audio id="huaudio" src="audio/Fast food.mp3" preload="auto"></audio>
+  <audio id="ygnaudio" src="audio/Literally nothing.mp3" preload="auto"></audio>
+  <audio id="smaudio" src="audio/NOT.mp3" preload="auto"></audio>
+  <audio id="pftaudio" src="audio/Perfection.mp3" preload="auto"></audio>
+  <audio id="ykaudio" src="audio/royal figure.mp3" preload="auto"></audio>
+  <audio id="shhaudio" src="audio/Secretly.mp3" preload="auto"></audio>
+  <audio id="tboaudio" src="audio/two different.mp3" preload="auto"></audio>
+  <audio id="wtfaudio" src="audio/weird thing.mp3" preload="auto"></audio>
+  <audio id="idaudio" src="audio/weird.mp3" preload="auto"></audio>
+  <audio id="ehaudio" src="audio/Whatever.mp3" preload="auto"></audio>
+  <audio id="mgtaudio" src="audio/You love.mp3" preload="auto"></audio>
+  <audio id="cbaudio" src="audio/yourself.mp3" preload="auto"></audio>
 
-  <main>
-    <div class="line1">
-      <button id="hu"><img src="images/hurryup.png" alt="hurryup"></button>
-      <button id="tbo"><img src="images/twoisbetterthanone.png" alt="two is better than one"></button>
-      <button id="yk"><img src="images/yasskween.png" alt="yass kween"></button>
-      <button id="ygn"><img src="images/yougetnothing.png" alt="you get nothing"></button>
-      <button id="id"><img src="images/iamdisgusted.png" alt="i am disgusted"></button>
-      <button id="wtf"><img src="images/wtf.png" alt="wtf"></button>
-    </div>
-    <header>
-      <h1>What Advice Would Help YOU Pick What You Want For Dinner?</h1>
-        <p>Enter Birthday Here:</p>
-          <p><input id="fname" type="text" placeholder="First name here"></p>
-          <p><input id="birthday" type="date"></p>
-          <p><button id="submit">Submit</button></p>
-          <p><button id="help">Need Help?</button></p>
-    </header>
-    <div class="line2">
-      <button id="cb"><img src="images/chef_boi_ardee.png" alt="chef boyardee"></button>
-      <button id="sm"><img src="images/shtillmad.png" alt="still mad"></button>
-      <button id="pft"><img src="images/perfecto.png" alt="perfecto"></button>
-      <button id="mgt"><img src="images/me_gustas_tu.png" alt="love"></button>
-      <button id="shh"><img src="images/shh.png" alt="shh"></button>
-      <button id="eh"><img src="images/eh.png" alt="eh"></button>
-    </div>
-  </main>
+  <div class="wrapper">
+    <main>
+      <div class="line1">
+        <button id="hu"><img src="images/hurryup.png" alt="hurryup"></button>
+        <button id="tbo"><img src="images/twoisbetterthanone.png" alt="two is better than one"></button>
+        <button id="yk"><img src="images/yasskween.png" alt="yass kween"></button>
+        <button id="ygn"><img src="images/yougetnothing.png" alt="you get nothing"></button>
+        <button id="id"><img src="images/iamdisgusted.png" alt="i am disgusted"></button>
+        <button id="wtf"><img src="images/wtf.png" alt="wtf"></button>
+      </div>
+      <header>
+        <h1>What Advice Would Help YOU Pick What You Want For Dinner?</h1>
+          <p>Enter Birthday Here:</p>
+            <p><input id="fname" type="text" placeholder="First name here"></p>
+            <p><input id="birthday" type="date"></p>
+            <div class="buttons">
+              <button id="submit">Submit</button>
+              <button id="help">Need Help?</button>
+            </div>
+      </header>
+      <div class="line2">
+        <button id="cb"><img src="images/chef_boi_ardee.png" alt="chef boyardee"></button>
+        <button id="sm"><img src="images/shtillmad.png" alt="still mad"></button>
+        <button id="pft"><img src="images/perfecto.png" alt="perfecto"></button>
+        <button id="mgt"><img src="images/me_gustas_tu.png" alt="love"></button>
+        <button id="shh"><img src="images/shh.png" alt="shh"></button>
+        <button id="eh"><img src="images/eh.png" alt="eh"></button>
+      </div>
+    </main>
     <div id="modal" class="modal" hidden>
       <div class="modal-body">
         <div class="modal-content">
@@ -60,7 +75,7 @@
               First, enter your first name in the textbox.
               Then, enter your birthday using the calendar, or type it in if one doesn't appear(dd/mm/yyyy).
               When you're done, hit submit and let the magical dinner fairy (me)
-              tell you what to get!
+              tell you what to get! (background image from shokugekinosoma.fandom.com/wiki/Transforming_Furikake_Gohan)
             </p>
           </div>
           <button id="closeHelpModal">Got it!</button>
@@ -68,6 +83,7 @@
       </div>
       <div class="blanket"></div>
     </div>
+  </div>
   <script src="Javasheet.js"></script>
 </body>
 </html>
