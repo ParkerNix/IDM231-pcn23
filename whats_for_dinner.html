@@ -24,6 +24,7 @@
           <p><input id="fname" type="text" placeholder="First name here"></p>
           <p><input id="birthday" type="date"></p>
           <p><button id="submit">Submit</button></p>
+          <p><button id="help">Need Help?</button></p>
     </header>
     <div class="line2">
       <button id="cb"><img src="images/chef_boi_ardee.png" alt="chef boyardee"></button>
@@ -40,12 +41,29 @@
           <div>
             <img id="imgModal" src="images/hurryup.png" alt="Your Icon">
           </div>
-          <p><span id="title">Title</span></p>
+          <p><span id="name"></span><span id="title">Title</span></p>
           <p><span id="dateRange">Date Range</span></p>
           <div id="description">
             <p>Object description goes here</p>
           </div>
           <button id="closeModal">Close</button>
+        </div>
+      </div>
+      <div class="blanket"></div>
+    </div>
+    <div id="helpModal" class="modal" hidden>
+      <div class="modal-body">
+        <div class="modal-content">
+          <div id="helpdesc">
+            <p>Hungry, but don't know what do get?
+              Use this "helpful" guide to inform your decision!
+              First, enter your first name in the textbox.
+              Then, enter your birthday using the calendar, or type it in if one doesn't appear(dd/mm/yyyy).
+              When you're done, hit submit and let the magical dinner fairy (me)
+              tell you what to get!
+            </p>
+          </div>
+          <button id="closeHelpModal">Got it!</button>
         </div>
       </div>
       <div class="blanket"></div>

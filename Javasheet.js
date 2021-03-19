@@ -121,6 +121,8 @@ submit.addEventListener('click', function () {
 
     const fName = document.getElementById('fname').value;
     console.log(`user's name is ` + fName);
+    const name = document.getElementById('name');
+    name.innerHTML = fName + `, `;
 
     const birthday = new Date(document.getElementById('birthday').value);
     console.log(`user's birthday is ` + birthday);
@@ -195,3 +197,16 @@ const imgModal = document.getElementById('imgModal');
 const title = document.getElementById('title');
 const dateRange = document.getElementById('dateRange');
 const description = document.getElementById('description');
+
+const help = document.getElementById('help');
+help.addEventListener('click', function() {
+    console.log('Help modal opened, wow!');
+    helpModal.hidden = !helpModal.hidden;
+});
+
+const helpModal = document.getElementById('helpModal');
+const closeHelpModal = document.getElementById('closeHelpModal');
+closeHelpModal.addEventListener('click', function() {
+  console.log('Help modal closed, sorry folks');
+  helpModal.hidden = !helpModal.hidden;
+});

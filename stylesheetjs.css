@@ -130,13 +130,13 @@
 	text-align: center;
 }
 
-#title, #dateRange {
+#title, #dateRange, #name {
     font-family: 'poppins', arial, sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-#description {
+#description, #helpdesc {
     font-family:  'open_sans', arial, sans-serif;
     font-weight: normal;
     font-size: 2rem;
